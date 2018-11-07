@@ -1,5 +1,8 @@
 const router = require('koa-router')()
 const Person = require('../dbs/modules/person')
+const Redis = require('koa-redis')
+
+const Store = new Redis().client // 创建一个redis的客户端实例
 
 router.prefix('/users')
 
@@ -65,6 +68,18 @@ router.post('/removePerson', async function (ctx) {
         name: ctx.request.body.name
     }).remove()
 
+    ctx.body = {
+        code: 0
+    }
+})
+
+router.get('/fix', async function (ctx) {
+    // 不通过session，直接存储redis数据
+    /* 在redis cli中查看变量
+    * 1. keys *
+    * 2. hget fix name 获取值
+    * */
+    const st = await Store.hset('fix', 'name', Math.random())
     ctx.body = {
         code: 0
     }
