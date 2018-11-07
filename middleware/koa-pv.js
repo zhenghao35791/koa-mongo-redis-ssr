@@ -1,4 +1,5 @@
 function pv(ctx) {
+    ctx.session.count++
     global.console.log('pv: ' + ctx.path)
 }
 

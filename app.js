@@ -8,15 +8,25 @@ const logger = require('koa-logger')
 const mongoose = require('mongoose')
 const dbConfig = require('./dbs/config')
 const pv = require('./middleware/koa-pv')
+const session = require('koa-generic-session')
+const Redis = require('koa-redis')
 
 const index = require('./routes/index')
 const users = require('./routes/users')
 
 // error handler
 onerror(app)
+// mongoose
 mongoose.connect(dbConfig.dbs, {
   userNewUrlParser: true
 })
+// redis
+app.keys = ['keys', 'keyskeys']
+app.use(session({
+    key: 'mt',
+    prefix: 'mtpr',
+    store: new Redis()
+}))
 // middlewares
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
