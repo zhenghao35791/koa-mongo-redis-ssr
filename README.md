@@ -1,6 +1,7 @@
 # koa-mongo-redis-ssr
 ```
 使用koa2作为服务端，数据库MongoDB，内存数据库redis的vue SSR项目
+基于koa2，nuxt.js的vue-SSR的pc项目，底层数据库使用MongoDB，内存数据库使用Redis
 ```
 ### 安装koa2，启动koa服务端
 ```
