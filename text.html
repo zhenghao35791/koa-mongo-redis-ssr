@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript">
+        // 1.
+        function sum(...rest){
+            let sum = 0
+            for (let i of rest) {
+                if(typeof i !== 'number' ) {throw 'not number'}
+                sum += i
+            }
+            return sum
+        }
+//        console.log(sum())
+//        console.log(sum(1,2,3,4))
+//        console.log(sum(1,2,3,'4'))
+        // 2.
+        function area_of_circle(r, pi=3.14) {
+            if(typeof(r) != 'number') { throw 'not number'};
+            return pi * r *r
+        }
+        // 原始的的答案
+        function area_of_circle2(r, pi) {
+            if(typeof(r) != 'number') { throw 'not number'};
+            if( arguments.length < 2) {
+                pi = 3.14;
+            }
+            return pi * r * r;
+        }
+//        console.log(area_of_circle(2))
+//        console.log(area_of_circle2(2))
+//        console.log(area_of_circle(2, 5))
+//        console.log(area_of_circle2(2, 5))
+//        console.log(area_of_circle(2, '5'))
+//        console.log(area_of_circle2(2, '5'))
+//        console.log(area_of_circle('3', '5'))
+//        console.log(area_of_circle2('3', '5'))
+
+        // 3.在一个Array中，删掉偶数，只保留奇数
+        var arr = [1, 2, 4, 5, 6, 9, 10, 15];
+
+        //r;  [1, 5, 9, 15]
+        var r= arr.filter((ele) => {
+            return ele % 2 !== 0
+        })
+//        console.log(r)
+//        console.log(r())
+
+        // 4.利用filter，可以巧妙地去除Array的重复元素
+        // let arr2 = [1, 2, 4, 5, 6, 9, 10, 15, 15, 1, 3, 4, 5];
+        function fileterArr() {
+            let r = arr2.filter( (ele, index, arr) => {
+                return arr.indexOf(ele) === index
+            })
+            return r
+        }
+        // console.log(fileterArr())
+
+        // 5.请尝试用filter()筛选出素数：
+        function get_primes(arr){
+            let r = arr.filter((ele) => {
+                if(typeof ele !== 'number') throw 'not number'
+                if(ele <= 1) return false
+                for(let i=2; i<= Math.sqrt(ele); i++) {
+                    if(ele % i === 0) return false
+                }
+                return true
+            })
+            return r
+        }
+        var
+            x,
+            r,
+            arr = [];
+        for (x = 1; x < 100; x++) {
+            arr.push(x);
+        }
+        r = get_primes(arr);
+//        if (r.toString() === [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97].toString()) {
+//            console.log('测试通过!');
+//        } else {
+//            console.log('测试失败: ' + r.toString());
+//        }
+
+        // 6.
+        var arr1 = "john".split('');
+        // console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(1));
+
+        var arr2 = arr1.reverse();
+        var arr3 = "jones".split('');
+        var arr4 = arr2.push(arr3);
+//        console.log(arr1)
+//        console.log(arr2)
+//        console.log(arr3)
+//        console.log(arr4)
+//        console.log(arr2)
+//        console.log(arr1)
+//
+//        console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+//        console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+//        console.log("array 2: length=" + arr2.length + " last=" + arr2.slice());
+//        console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(1));
+
+        // 7.
+//        console.log(1 + "2" + "2"); // 122
+//        console.log(1 + +"2" + "2");// 32
+//        console.log(1 + -"1" + "2");// 0
+//        console.log(+"1" + "1" + "2");// 112
+//        console.log( "A" - "B" + "2");// NaN2
+//        console.log( "A" - "B" + 2) // NaN
+//
+        // 8.
+//        for (let i = 0; i < 5; i++) {
+//            setTimeout(function() { console.log(i); }, i * 1000 );
+//        }
+
+
+//        for (var i = 0; i < 5; i++) {
+//            (function(n){
+//                setTimeout(
+//                    function() { console.log(n); }
+//                    , n * 1000 );
+//            })(i)
+//
+//        }
+//            for (var i = 0; i < 5; i++) {
+//                (function(n){
+//                    setTimeout(
+//                        function() { console.log(n); }
+//                        , n * 1000 );
+//                })(i)
+//
+//            }
+
+//                for (var i = 0; i < 5; i++) {
+//                    // console.log(i)
+//                    (function (n) {
+//                        setTimeout(function() { console.log(n); }, n * 1000);
+//                    })(i)
+//                }
+
+        //9.
+//        var a={},
+//            b={key:'b'},
+//            c={key:'c'};
+//
+//        a[b]=123;
+//        a[c]=456;
+//
+//        console.log(a) //[object Object]: 456
+//        console.log(a[b])
+//        console.log(a[c])
+
+        // 10.
+//        (function(x) {
+//            return (function(y) {
+//                console.log(x);
+//                console.log(y);
+//            })(2)
+//        })(1)
+
+        // 11.
+        var hero = {
+            _name: 'John Doe',
+            getSecretIdentity: function (){
+                return this._name;
+            }
+        };
+        var stoleSecretIdentity = hero.getSecretIdentity;
+//
+//        console.log(stoleSecretIdentity());
+//        console.log(hero.getSecretIdentity());
+
+        // 12.
+        var length = 10;
+        function fn() {
+            console.log(this.length);
+        }
+
+        var obj = {
+            length: 5,
+            method: function(fn) {
+                fn();
+                arguments[0]();
+                console.log(fn)
+                console.log(arguments[0])
+                console.log(arguments[0]())
+                console.log(arguments[1])
+            }
+        };
+
+        // obj.method(fn, 1);
+
+        // 13.
+        (function () {
+            console.log(x,y);
+
+            try {
+                throw new Error('111');
+            } catch (x) {
+                console.log(x);
+                var x = 1, y = 3
+                console.log(x,y);
+            }
+            console.log(x,y);
+        })();
+
+    </script>
+</head>
+<body>
+    <ul>
+        <li>1.请用rest参数编写一个sum()函数，接收任意个参数并返回它们的和 </li>
+        <li>2.定义一个计算圆面积的函数area_of_circle()，它有两个参数：
+            r: 表示圆的半径；
+            pi: 表示π的值，如果不传，则默认3.14 </li>
+        <li>3.filter也是一个常用的操作，它用于把Array的某些元素过滤掉，然后返回剩下的元素。
+            和map()类似，Array的filter()也接收一个函数。和map()不同的是，filter()把传入的函数依次作用于每个元素，然后根据返回值是true还是false决定保留还是丢弃该元素。
+            例如，在一个Array中，删掉偶数，只保留奇数，可以这么写 </li>
+        <li>4.利用filter，可以巧妙地去除Array的重复元素： </li>
+        <li>5.请尝试用filter()筛选出素数：
+            / 测试:
+            var
+            x,
+            r,
+            arr = [];
+            for (x = 1; x < 100; x++) {
+            arr.push(x);
+            }
+            r = get_primes(arr);
+            if (r.toString() === [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97].toString()) {
+            console.log('测试通过!');
+            } else {
+            console.log('测试失败: ' + r.toString());
+            }
+        </li>
+        <li>6. 下面的代码将输出到控制台，为什么？
+            var arr1 = "john".split('');
+            var arr2 = arr1.reverse();
+            var arr3 = "jones".split('');
+            arr2.push(arr3);
+            console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+            console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));</li>
+        <li>7.下面的代码将输出到控制台，为什么？
+            console.log(1 + "2" + "2");
+            console.log(1 + +"2" + "2");
+            console.log(1 + -"1" + "2");
+            console.log(+"1" + "1" + "2");
+            console.log( "A" - "B" + "2");
+            console.log( "A" - "B" + 2);</li>
+        <li>8. 以下代码的输出是什么：
+            for (var i = 0; i < 5; i++) {
+            setTimeout(function() { console.log(i); }, i * 1000 );
+            }</li>
+        <li>9.以下代码的输出是什么？解释你的答案。
+            var a={},
+            b={key:'b'},
+            c={key:'c'};
+
+            a[b]=123;
+            a[c]=456;
+
+            console.log(a[b]);</li>
+        <li>10. 考虑下面的代码片段。控制台的输出是什么，为什么？
+            (function(x) {
+            return (function(y) {
+            console.log(x);
+            })(2)
+            })(1);</li>
+        <li>
+            11. 以下代码将输出到控制台以及为什么
+            var hero = {
+            _name: 'John Doe',
+            getSecretIdentity: function (){
+            return this._name;
+            }
+            };
+            var stoleSecretIdentity = hero.getSecretIdentity;
+
+            console.log(stoleSecretIdentity());
+            console.log(hero.getSecretIdentity());
+        </li>
+        <li>12. 在JavaScript中测试您的这些知识：以下代码的输出是什么？
+            var length = 10;
+            function fn() {
+            console.log(this.length);
+            }
+
+            var obj = {
+            length: 5,
+            method: function(fn) {
+            fn();
+            arguments[0]();
+            }
+            };
+
+            obj.method(fn, 1);</li>
+        <li>13. 考虑下面的代码。输出是什么，为什么？
+            (function () {
+            try {
+            throw new Error();
+            } catch (x) {
+            var x = 1, y = 2;
+            console.log(x);
+            }
+            console.log(x);
+            console.log(y);
+            })();</li>
+        <li>14. 你如何克隆一个对象？
+            var obj = {a: 1 ,b: 2}
+            var objclone = Object.assign({},obj);</li>
+        <li>15. 代码返回后会怎么样？
+            console.log(typeof typeof 1);
+        </li>
+        <li>16. 以下代码输出什么？为什么？
+            var b = 1;
+
+            function outer(){
+            var b = 2
+
+            function inner(){
+            console.log(b)  // 变量提升，为undefined
+            b++;
+            console.log(b) // b是undefined，b++是NaN
+            var b = 3;
+            console.log(b)  // 内层定义了b=3
+            }
+
+            inner();
+
+            }
+            outer();</li>
+    </ul>
+</body>
+</html>
