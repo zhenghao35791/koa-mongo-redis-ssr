@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a48a4137-7d04-4d19-a3b8-00001c724626" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/footer/geo.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/footer/index.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/header/geo.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/header/nav.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/header/search.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/header/user.vue" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/static/favicon.ico" afterPath="$PROJECT_DIR$/mt-app/mt-app/static/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/components/Logo.vue" afterPath="$PROJECT_DIR$/mt-app/mt-app/components/Logo.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/components/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/components/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/layouts/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/layouts/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/layouts/default.vue" afterPath="$PROJECT_DIR$/mt-app/mt-app/layouts/default.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/middleware/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/middleware/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/nuxt.config.js" afterPath="$PROJECT_DIR$/mt-app/mt-app/nuxt.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/package-lock.json" afterPath="$PROJECT_DIR$/mt-app/mt-app/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/package.json" afterPath="$PROJECT_DIR$/mt-app/mt-app/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/pages/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/pages/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/pages/index.vue" afterPath="$PROJECT_DIR$/mt-app/mt-app/pages/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/plugins/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/plugins/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/plugins/element-ui.js" afterPath="$PROJECT_DIR$/mt-app/mt-app/plugins/element-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/server/index.js" afterPath="$PROJECT_DIR$/mt-app/mt-app/server/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/static/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/static/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/store/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/store/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -77,11 +54,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mt-app/mt-app/assets/css/cart/index.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mt-app/mt-app/components/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mt-app/mt-app/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mt-app/mt-app/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -107,6 +114,8 @@
         <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/mt-app/mt-app/layouts/default.vue" />
         <option value="$PROJECT_DIR$/mt-app/mt-app/assets/css/cart/index.scss" />
+        <option value="$PROJECT_DIR$/mt-app/mt-app/components/README.md" />
+        <option value="$PROJECT_DIR$/mt-app/mt-app/README.md" />
       </list>
     </option>
   </component>
@@ -218,8 +227,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -393,13 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mt-app/mt-app/pages/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -437,6 +440,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/components/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding />
         </state>
       </provider>
