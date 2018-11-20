@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a48a4137-7d04-4d19-a3b8-00001c724626" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump.rdb" afterPath="$PROJECT_DIR$/dump.rdb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/footer/geo.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/footer/index.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/header/geo.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/header/nav.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/header/search.vue" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mt-app/mt-app/public/header/user.vue" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/static/favicon.ico" afterPath="$PROJECT_DIR$/mt-app/mt-app/static/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/components/Logo.vue" afterPath="$PROJECT_DIR$/mt-app/mt-app/components/Logo.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/components/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/components/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/layouts/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/layouts/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/layouts/default.vue" afterPath="$PROJECT_DIR$/mt-app/mt-app/layouts/default.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/middleware/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/middleware/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/nuxt.config.js" afterPath="$PROJECT_DIR$/mt-app/mt-app/nuxt.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/package-lock.json" afterPath="$PROJECT_DIR$/mt-app/mt-app/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/package.json" afterPath="$PROJECT_DIR$/mt-app/mt-app/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/pages/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/pages/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/pages/index.vue" afterPath="$PROJECT_DIR$/mt-app/mt-app/pages/index.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/plugins/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/plugins/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/plugins/element-ui.js" afterPath="$PROJECT_DIR$/mt-app/mt-app/plugins/element-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/server/index.js" afterPath="$PROJECT_DIR$/mt-app/mt-app/server/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/static/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/static/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mt-app/mt-app/store/README.md" afterPath="$PROJECT_DIR$/mt-app/mt-app/store/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +64,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1542056294000" expanded="true" signature="542:662" ph="[...]" />
+                <marker date="1542056294000" expanded="true" signature="667:719" ph="/*...*/" />
+                <marker date="1542056294000" expanded="true" signature="768:796" ph="/*...*/" />
+                <marker date="1542056294000" expanded="true" signature="808:898" ph="[...]" />
+                <marker date="1542056294000" expanded="true" signature="902:941" ph="/*...*/" />
+                <marker date="1542056294000" expanded="true" signature="1027:1059" ph="/*...*/" />
+                <marker date="1542056294000" expanded="true" signature="1075:1126" ph="/*...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,7 +80,7 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mt-app/mt-app/assets/css/cart/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-1">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -76,6 +106,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/mt-app/mt-app/layouts/default.vue" />
+        <option value="$PROJECT_DIR$/mt-app/mt-app/assets/css/cart/index.scss" />
       </list>
     </option>
   </component>
@@ -95,12 +126,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/mt-app/mt-app/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="153" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="981" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -117,7 +148,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -142,75 +172,13 @@
               <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
               <item name="mt-app" type="462c0819:PsiDirectoryNode" />
               <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koa-mongo-redis-ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koa-mongo-redis-ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koa-mongo-redis-ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koa-mongo-redis-ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koa-mongo-redis-ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koa-mongo-redis-ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koa-mongo-redis-ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koa-mongo-redis-ssr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koa-mongo-redis-ssr" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="mt-app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,16 +219,16 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14583333" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -281,6 +249,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1542056294000" expanded="true" signature="542:662" ph="[...]" />
+            <marker date="1542056294000" expanded="true" signature="667:719" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="768:796" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="808:898" ph="[...]" />
+            <marker date="1542056294000" expanded="true" signature="902:941" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="1027:1059" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="1075:1126" ph="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/assets/css/cart/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mt-app/mt-app/pages/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -301,7 +309,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1542056294000" expanded="true" signature="542:662" ph="[...]" />
+            <marker date="1542056294000" expanded="true" signature="667:719" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="768:796" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="808:898" ph="[...]" />
+            <marker date="1542056294000" expanded="true" signature="902:941" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="1027:1059" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="1075:1126" ph="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -381,7 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -405,21 +420,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1542056294000" expanded="true" signature="542:662" ph="[...]" />
+            <marker date="1542056294000" expanded="true" signature="667:719" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="768:796" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="808:898" ph="[...]" />
+            <marker date="1542056294000" expanded="true" signature="902:941" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="1027:1059" ph="/*...*/" />
+            <marker date="1542056294000" expanded="true" signature="1075:1126" ph="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/assets/assets/css/cart/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mt-app/mt-app/assets/assets/css/cart/index.scss" />
     <entry file="file://$PROJECT_DIR$/mt-app/mt-app/assets/css/cart/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
