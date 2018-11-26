@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript">
+        //        1、实现一个函数，判断输入是不是回文字符串。
+        function testHuiString(testString) {
+            if (typeof testString !== 'string') {
+                return false
+            } else {
+                // console.log(testString.split('').reverse())
+                return testString.split('').reverse().join('') === testString
+            }
+        }
+
+        console.log(testHuiString("asdasddsadsaa"))
+        console.log(testHuiString("asdasddsadsa"))
+    </script>
+    <style type="text/less">
+        /*2、两种以上方式实现已知或者未知宽度的垂直水平居中。*/
+        /*方法一：已知宽度，relative 负一半margin*/
+        .wraper {
+            position: relative;
+            .box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100px;
+                height: 100px;
+                margin: -50px 0 0 -50px;
+            }
+        }
+
+        /*方法二：未知宽度 */
+        .wraper {
+            position: relative;
+            .box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        /*方法三：flex */
+        .wraper {
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+            }
+        }
+
+        /*方法四：table */
+        .wraper {
+            display: table;
+            .box {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    </style>
+    <script type="application/javascript">
+        //        3、实现效果，点击容器内的图标，图标边框变成border 1px solid red，点击空白处重置。
+        const box = document.getElementById('box');
+
+        function isIcon(target) {
+            return target.className.includes('icon');
+        }
+
+        box.onClick = function (e) {
+            e.stopPropagation();
+            const target = e.target;
+            if (isIcon(target)) {
+                target.style.border = '1px solid red';
+            }
+        }
+        const doc = document;
+        doc.onclick = function (e) {
+            const children = box.children;
+            for (let i; i < children.length; i++) {
+                if (isIcon(children[i])) {
+                    children[i].style.border = 'none';
+                }
+            }
+        }
+    </script>
+    <script type="application/javascript">
+        //        4、请简单实现双向数据绑定mvvm。
+    </script>
+    <script type="application/javascript">
+        //        5、实现Storage，使得该对象为单例，并对localStorage进行封装设置值setItem(key,value)和getItem(key)
+    </script>
+    <script type="application/javascript">
+        //        6、说说event loop
+    </script>
+    <script type="application/javascript">
+        //       7、说说事件流吧
+    </script>
+    <script type="application/javascript">
+        //        8、手写实现一个promise
+    </script>
+    <script type="application/javascript">
+        //        9、从输入URL到看到页面发生的全过程
+    </script>
+</head>
+<body>
+<ul>
+    <li>1、实现一个函数，判断输入是不是回文字符串。 ==>testHuiString("asdasddsadsa")</li>
+    <li>2、两种以上方式实现已知或者未知宽度的垂直水平居中。</li>
+    <li>3、实现效果，点击容器内的图标，图标边框变成border 1px solid red，点击空白处重置。</li>
+    <li>4、请简单实现双向数据绑定mvvm。</li>
+    <li>5、实现Storage，使得该对象为单例，并对localStorage进行封装设置值setItem(key,value)和getItem(key)</li>
+    <li>6、说说event loop</li>
+    <li>7、说说事件流吧</li>
+    <li>8、手写实现一个promise</li>
+    <li>9、从输入URL到看到页面发生的全过程</li>
+    <li>10、现在有一个函数A和函数B，请你实现B继承A</li>
+    <li>11、几种继承的方式，分别说说他们的优缺点A</li>
+    <li>12、浏览器的缓存机制</li>
+    <li></li>
+</ul>
+</body>
+</html>
