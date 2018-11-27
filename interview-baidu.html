@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="application/javascript">
-        // https://mp.weixin.qq.com/s/LAI1Rdqrf2Wq6STi0jsfVQ
-        //        1、实现一个函数，判断输入是不是回文字符串。
+        // 1、实现一个函数，判断输入是不是回文字符串。
         function testHuiString(testString) {
             if (typeof testString !== 'string') {
                 return false
@@ -63,15 +62,192 @@
             }
         }
     </style>
+    <style type="text/css">
+        #box{
+            width: 100%;
+            height: 100px;
+            border: 3px solid #555;
+        }
+        #box p{
+            line-height: 10px;
+        }
+        #box .icon{
+            width: 100px;
+            height: 30px;
+            float: left;
+            padding: 10px;
+        }
+    </style>
+
     <script type="application/javascript">
-        //        3、实现效果，点击容器内的图标，图标边框变成border 1px solid red，点击空白处重置。
+        window.onload = function () {
+            // 4、请简单实现双向数据绑定mvvm。
+            const input = document.getElementById('input')
+            const text = document.getElementById('text')
+            const obj = {}
+            Object.defineProperty(obj, 'text', {
+                get: () => {
+                    return obj
+                },
+                set: (newValue) => {
+                    input.value = newValue
+                    text.innerHTML = newValue
+                }
+            })
+            document.getElementById('input').onchange = function (e) {
+                // 监听input的onchange事件，有新的输入就调用obj.text的set方法赋值
+                obj.text = e.target.value
+            }
+        }
+
+    </script>
+    <script type="application/javascript">
+        // 5、实现Storage，使得该对象为单例，并对localStorage进行封装设置值setItem(key,value)和getItem(key)
+        var instance = null;
+
+        class Storage {
+            static getInstance() {
+                if (!instance) {
+                    instance = new Storage();
+                }
+                return instance;
+            }
+
+            // setItem = (key, value) => localStorage.setItem(key, value)
+            // getItem = key => localStorage.getItem(key)
+        }
+    </script>
+    <script type="application/javascript">
+        // 10、现在有一个函数A和函数B，请你实现B继承A
+        // 方式1：简单易懂，但是无法实现多继承，父类新增原型方法/原型属性，子类都能访问到
+
+        // 方式2：可以实现多继承，但是只能继承父类的实例属性和方法，不能继承原型属性/方法
+
+        // 方式3：可以继承实例属性/方法，也可以继承原型属性/方法，但是示例了两个A的构造函数
+        // 方式1
+        function B(){}
+        function A(){}
+        B.prototype = new A();
+        // 方式2
+        function A(){}
+        function B(){
+            A.call(this);
+        }
+        // 方式3
+        function B(){}
+        function A(){}
+        B.prototype = new A();
+        function B(){
+            A.call(this);
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <!--https://mp.weixin.qq.com/s/LAI1Rdqrf2Wq6STi0jsfVQ-->
+    <li>1、实现一个函数，判断输入是不是回文字符串。 ==>testHuiString("asdasddsadsa")</li>
+    <li>2、两种以上方式实现已知或者未知宽度的垂直水平居中。</li>
+    <li>3、实现效果，点击容器内的图标，图标边框变成border 1px solid red，点击空白处重置。
+        <div id="box">
+            <div class="icon">icon1</div>
+            <div class="icon">icon2</div>
+            <div class="icon">icon3</div>
+            <div class="icon">icon4</div>
+            <span>spanspanspanspanspan</span>
+            <span>spanspanspanspanspan</span>
+            <span>spanspanspanspanspan</span>
+            <div>aaaaa</div>
+            <div>aaaaa</div>
+            <div class="icon">icon11</div>
+            <div class="icon">icon21</div>
+            <div class="icon">icon31</div>
+            <div class="icon">icon41</div>
+        </div>
+    </li>
+    <br>
+    <li>4、请简单实现双向数据绑定mvvm。
+        <div>
+            输入值：<input type="text" id="input">
+            获取值：<p id="text"></p>
+        </div>
+    </li>
+    <li>5、实现Storage，使得该对象为单例，并对localStorage进行封装设置值setItem(key,value)和getItem(key)</li>
+    <li>6、说说event loop
+        <div>
+            <p>首先，js是单线程的，主要的任务是处理用户的交互，而用户的交互无非就是响应DOM的增删改，使用事件队列的形式，一次事件循环只处理一个事件响应，使得脚本执行相对连续.</p>
+            <p>所以有了事件队列，用来储存待执行的事件，那么事件队列的事件从哪里被push进来的呢。</p>
+            <p>那就是另外一个线程叫事件触发线程做的事情了，他的作用主要是在定时触发器线程、异步HTTP请求线程满足特定条件下的回调函数push到事件队列中，等待js引擎空闲的时候去执行.</p>
+            <p>当然js引擎执行过程中有优先级之分，首先js引擎在一次事件循环中，会先执行js线程的主任务，然后会去查找是否有微任务microtask（promise），如果有那就优先执行微任务，如果没有，在去查找宏任务macrotask（setTimeout、setInterval）进行执行。</p>
+        </div>
+    </li>
+    <li>7、说说事件流吧
+        <p>事件流分为两种，捕获事件流和冒泡事件流。
+
+            捕获事件流从根节点开始执行，一直往子节点查找执行，直到查找执行到目标节点。
+
+            冒泡事件流从目标节点开始执行，一直往父节点冒泡查找执行，直到查到到根节点。
+
+            事件流分为三个阶段，一个是捕获节点，一个是处于目标节点阶段，一个是冒泡阶段。</p>
+    </li>
+    <li>8、手写实现一个promise</li>
+    <li>9、从输入URL到看到页面发生的全过程
+        <p>首先浏览器主进程接管，开了一个下载线程。
+
+            然后进行HTTP请求（DNS查询、IP寻址等等），中间会有三次握手，等待响应，开始下载响应报文。
+
+            将下载完的内容转交给Renderer进程管理。
+
+            Renderer进程开始解析css rule tree和dom tree，这两个过程是并行的，所以一般我会把link标签放在页面顶部。
+
+            解析绘制过程中，当浏览器遇到link标签或者script、img等标签，浏览器会去下载这些内容，遇到时候缓存的使用缓存，不适用缓存的重新下载资源。
+
+            css rule tree和dom tree生成完了之后，开始合成render tree，这个时候浏览器会进行layout，开始计算每一个节点的位置，然后进行绘制。
+
+            绘制结束后，关闭TCP连接，过程有四次挥手。</p>
+    </li>
+    <li>10、现在有一个函数A和函数B，请你实现B继承A</li>
+    <li>11、几种继承的方式，分别说说他们的优缺点A
+        <p>
+            方式1：简单易懂，但是无法实现多继承，父类新增原型方法/原型属性，子类都能访问到
+
+            方式2：可以实现多继承，但是只能继承父类的实例属性和方法，不能继承原型属性/方法
+
+            方式3：可以继承实例属性/方法，也可以继承原型属性/方法，但是示例了两个A的构造函数
+        </p>
+    </li>
+    <li>12、浏览器的缓存机制
+        <p>
+            浏览器缓存机制有两种，一种为强缓存，一种为协商缓存。
+
+            对于强缓存，浏览器在第一次请求的时候，会直接下载资源，然后缓存在本地，第二次请求的时候，直接使用缓存。
+
+            对于协商缓存，第一次请求缓存且保存缓存标识与时间，重复请求向服务器发送缓存标识和最后缓存时间，服务端进行校验，如果失效则使用缓存。
+
+            协商缓存方案：
+
+            Exprires：服务端的响应头，第一次请求的时候，告诉客户端，该资源什么时候会过期。Exprires的缺陷是必须保证服务端时间和客户端时间严格同步。
+
+            Cache-control：max-age，表示该资源多少时间后过期，解决了客户端和服务端时间必须同步的问题，
+
+            If-None-Match/ETag：缓存标识，对比缓存时使用它来标识一个缓存，第一次请求的时候，服务端会返回该标识给客户端，客户端在第二次请求的时候会带上该标识与服务端进行对比并返回If-None-Match标识是否表示匹配。
+
+            Last-modified/If-Modified-Since：第一次请求的时候服务端返回Last-modified表明请求的资源上次的修改时间，第二次请求的时候客户端带上请求头If-Modified-Since，表示资源上次的修改时间，服务端拿到这两个字段进行对比。
+
+        </p>
+    </li>
+    <li></li>
+</ul>
+<script type="application/javascript">
+    // 3、实现效果，点击容器内的图标，图标边框变成border 1px solid red，点击空白处重置。
         const box = document.getElementById('box');
 
         function isIcon(target) {
+            console.log(target.className)
             return target.className.includes('icon');
         }
 
-        box.onClick = function (e) {
+        box.onclick = function (e) {
+            console.log(e.target)
             e.stopPropagation();
             const target = e.target;
             if (isIcon(target)) {
@@ -81,47 +257,14 @@
         const doc = document;
         doc.onclick = function (e) {
             const children = box.children;
-            for (let i; i < children.length; i++) {
+            console.log(children)
+            console.log(children.length)
+            for (let i=0; i < children.length; i++) {
                 if (isIcon(children[i])) {
                     children[i].style.border = 'none';
                 }
             }
         }
-    </script>
-    <script type="application/javascript">
-        //        4、请简单实现双向数据绑定mvvm。
-    </script>
-    <script type="application/javascript">
-        //        5、实现Storage，使得该对象为单例，并对localStorage进行封装设置值setItem(key,value)和getItem(key)
-    </script>
-    <script type="application/javascript">
-        //        6、说说event loop
-    </script>
-    <script type="application/javascript">
-        //       7、说说事件流吧
-    </script>
-    <script type="application/javascript">
-        //        8、手写实现一个promise
-    </script>
-    <script type="application/javascript">
-        //        9、从输入URL到看到页面发生的全过程
-    </script>
-</head>
-<body>
-<ul>
-    <li>1、实现一个函数，判断输入是不是回文字符串。 ==>testHuiString("asdasddsadsa")</li>
-    <li>2、两种以上方式实现已知或者未知宽度的垂直水平居中。</li>
-    <li>3、实现效果，点击容器内的图标，图标边框变成border 1px solid red，点击空白处重置。</li>
-    <li>4、请简单实现双向数据绑定mvvm。</li>
-    <li>5、实现Storage，使得该对象为单例，并对localStorage进行封装设置值setItem(key,value)和getItem(key)</li>
-    <li>6、说说event loop</li>
-    <li>7、说说事件流吧</li>
-    <li>8、手写实现一个promise</li>
-    <li>9、从输入URL到看到页面发生的全过程</li>
-    <li>10、现在有一个函数A和函数B，请你实现B继承A</li>
-    <li>11、几种继承的方式，分别说说他们的优缺点A</li>
-    <li>12、浏览器的缓存机制</li>
-    <li></li>
-</ul>
+</script>
 </body>
 </html>
